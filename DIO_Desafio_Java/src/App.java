@@ -7,7 +7,9 @@ public class App {
         Conta poupanca = new ContaPoupanca(guilherme);
 
         cc.depositar(100);
-        cc.transferir(100, poupanca);
+        cc.transferir(200, poupanca);
+        cc.depositar(100);
+        cc.transferir(200, poupanca);
 
         cc.imprimirExtrato();
         poupanca.imprimirExtrato();
